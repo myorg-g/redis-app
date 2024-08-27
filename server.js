@@ -74,7 +74,8 @@ mongoose.connect(mongoUri, {
 .then(() => logger.info('Connected to MongoDB'))
 .catch(err => logger.error('Error connecting to MongoDB:', err));
 
-// Start server
-app.listen(5000, () => {
-    logger.info('Server is running on port 5000');
+const PORT = process.env.PORT || 3000; // Default to 3000 if PORT is not defined
+
+app.listen(PORT, () => {
+    logger.info(`Server is running on port ${PORT}`);
 });
