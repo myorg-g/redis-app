@@ -1,0 +1,16 @@
+# Exported from Render on 2024-08-27T05:41:46Z
+services:
+- type: web
+  name: book-store
+  runtime: static
+  repo: https://github.com/myorg-g/redis-app
+  envVars:
+  - key: REDIS_URL
+    sync: false
+  - key: MONGODB_URI
+    sync: false
+  - key: PORT
+    sync: false
+  buildCommand: npm install && node server.js
+  staticPublishPath: .
+version: "1"
