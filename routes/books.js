@@ -30,7 +30,9 @@ const checkCache = async (req, res, next) => {
             const cachedData = await redisClient.get(`book:${id}`);
             if (cachedData) {
                 logger.info(`Cache hit for book ID: ${id}`);
-                return res.json(JSON.parse(cachedData));
+                return res.json({ source: 'cache', data: JSON.parse(cachedData) });
+            } else {
+                logger.info(`Cache miss for book ID: ${id}`);
             }
         } catch (err) {
             logger.error('Redis cache error:', err);
@@ -55,6 +57,15 @@ const checkCache = async (req, res, next) => {
  *         year:
  *           type: integer
  *           example: 1925
+ *         imageUrl:
+ *           type: string
+ *           example: "http://example.com/image.jpg"
+ *         description:
+ *           type: string
+ *           example: "A classic novel of the Jazz Age."
+ *         bookUrl:
+ *           type: string
+ *           example: "http://example.com/book"
  *       required:
  *         - title
  *         - author
@@ -80,12 +91,13 @@ router.get('/', async (req, res) => {
         const cachedBooks = await redisClient.get('allBooks');
         if (cachedBooks) {
             logger.info('Cache hit for all books');
-            return res.json(JSON.parse(cachedBooks));
+            return res.json({ source: 'cache', data: JSON.parse(cachedBooks) });
         }
+        logger.info('Cache miss for all books, retrieving from database');
         const books = await Book.find();
-        await redisClient.set('allBooks', JSON.stringify(books));
-        logger.info('Retrieved all books from database');
-        res.json(books);
+        await redisClient.set('allBooks', JSON.stringify(books), 'EX', 3600); // Set cache with expiration of 1 hour
+        logger.info('Set cache for all books');
+        res.json({ source: 'database', data: books });
     } catch (err) {
         logger.error('Error retrieving all books:', err);
         res.status(500).json({ message: err.message });
@@ -118,9 +130,9 @@ router.get('/:id', checkCache, async (req, res) => {
     try {
         const book = await Book.findById(req.params.id);
         if (book) {
-            await redisClient.set(`book:${req.params.id}`, JSON.stringify(book));
-            logger.info(`Retrieved book with ID: ${req.params.id}`);
-            res.json(book);
+            await redisClient.set(`book:${req.params.id}`, JSON.stringify(book), 'EX', 3600); // Set cache with expiration of 1 hour
+            logger.info(`Updated cache for book with ID: ${req.params.id}`);
+            res.json({ source: 'database', data: book });
         } else {
             logger.warn(`Book not found for ID: ${req.params.id}`);
             res.status(404).json({ message: 'Book not found' });
@@ -151,10 +163,14 @@ router.get('/:id', checkCache, async (req, res) => {
  *               $ref: '#/components/schemas/Book'
  */
 router.post('/', async (req, res) => {
+    const { title, author, year, imageUrl, description, bookUrl } = req.body;
     const book = new Book({
-        title: req.body.title,
-        author: req.body.author,
-        year: req.body.year,
+        title,
+        author,
+        year,
+        imageUrl,
+        description,
+        bookUrl
     });
 
     try {
@@ -200,16 +216,16 @@ router.put('/:id', async (req, res) => {
     try {
         const book = await Book.findByIdAndUpdate(req.params.id, req.body, { new: true });
         if (book) {
-            await redisClient.set(`book:${req.params.id}`, JSON.stringify(book));
             await redisClient.del('allBooks'); // Invalidate cache for all books
-            logger.info('Updated book with ID:', req.params.id);
+            await redisClient.set(`book:${req.params.id}`, JSON.stringify(book), 'EX', 3600); // Update cache
+            logger.info('Updated book:', book);
             res.json(book);
         } else {
             logger.warn(`Book not found for ID: ${req.params.id}`);
             res.status(404).json({ message: 'Book not found' });
         }
     } catch (err) {
-        logger.error(`Error updating book with ID: ${req.params.id}`, err);
+        logger.error('Error updating book:', err);
         res.status(400).json({ message: err.message });
     }
 });
@@ -228,7 +244,7 @@ router.put('/:id', async (req, res) => {
  *           type: string
  *     responses:
  *       200:
- *         description: Book deleted
+ *         description: The deleted book
  *       404:
  *         description: Book not found
  */
@@ -236,16 +252,16 @@ router.delete('/:id', async (req, res) => {
     try {
         const book = await Book.findByIdAndDelete(req.params.id);
         if (book) {
-            await redisClient.del(`book:${req.params.id}`);
             await redisClient.del('allBooks'); // Invalidate cache for all books
-            logger.info('Deleted book with ID:', req.params.id);
-            res.json({ message: 'Book deleted' });
+            await redisClient.del(`book:${req.params.id}`); // Invalidate cache for single book
+            logger.info('Deleted book:', book);
+            res.json(book);
         } else {
             logger.warn(`Book not found for ID: ${req.params.id}`);
             res.status(404).json({ message: 'Book not found' });
         }
     } catch (err) {
-        logger.error(`Error deleting book with ID: ${req.params.id}`, err);
+        logger.error('Error deleting book:', err);
         res.status(500).json({ message: err.message });
     }
 });

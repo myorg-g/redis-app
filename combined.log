@@ -1,2 +1,229 @@
 {"level":"info","message":"Server is running on port 5000","timestamp":"2024-08-27T05:35:39.999Z"}
 {"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-27T05:35:42.049Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-27T07:44:55.672Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-27T07:44:57.707Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-27T07:49:51.381Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-27T07:49:53.328Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-27T07:52:16.915Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-27T07:52:19.064Z"}
+{"$__":{"$versionError":null,"activePaths":{"paths":{"author":"require","title":"require"},"states":{"default":{},"modify":{},"require":{"author":true,"title":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"author":true,"title":true,"year":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"66cd85c9a802a383d5ce573e","author":"F. Scott Fitzgerald","title":"The Great Gatsby","year":1925},"level":"info","message":"Created new book:","timestamp":"2024-08-27T07:52:41.327Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T07:53:22.053Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:09:25.758Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:09:27.634Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:09:30.462Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:09:31.201Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:09:40.621Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:09:43.077Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:09:46.328Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:12:25.262Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:12:27.653Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-27T08:15:33.327Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-27T08:15:35.184Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:15:38.097Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:15:39.604Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:15:48.441Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:15:55.956Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:15:57.935Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:15:59.914Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:16:00.657Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:16:01.149Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:16:01.574Z"}
+{"level":"info","message":"Retrieved all books from database","timestamp":"2024-08-27T08:16:01.952Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-27T08:21:46.252Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-27T08:21:48.261Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-27T08:21:58.646Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-27T08:21:58.849Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-27T08:22:11.582Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-27T08:22:11.776Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-27T08:22:12.546Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-27T08:22:12.740Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-27T08:22:14.443Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-27T08:22:14.639Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-27T08:22:16.317Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-27T08:22:16.514Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-27T08:22:16.826Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-27T08:22:17.019Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-27T08:22:17.408Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-27T08:22:17.601Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-27T08:34:21.568Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-27T08:34:23.605Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-27T08:34:50.027Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-27T08:34:51.898Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-28T06:17:06.353Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-28T06:17:08.216Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-28T06:19:38.342Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-28T06:19:40.219Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:19:42.810Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:19:43.012Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:19:45.835Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:19:46.029Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:19:55.550Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:19:55.745Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-28T06:23:00.281Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-28T06:23:02.317Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-28T06:23:24.320Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-28T06:23:26.149Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:36.204Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:36.407Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:36.482Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:36.676Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:36.747Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:36.940Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:37.020Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:37.214Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:38.179Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:38.373Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:38.438Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:38.631Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:38.698Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:38.892Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:38.958Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:39.151Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:39.219Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:39.412Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:39.696Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:39.890Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:39.955Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:40.149Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:40.213Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:40.406Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:41.713Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:41.907Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:41.972Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:42.166Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:42.233Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:42.426Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:42.495Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:42.687Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:45.453Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:45.646Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:46.205Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:46.398Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:46.469Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:46.662Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:23:46.729Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:23:46.922Z"}
+{"$__":{"$versionError":null,"activePaths":{"paths":{"author":"require","title":"require"},"states":{"default":{},"modify":{},"require":{"author":true,"title":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"author":true,"title":true,"year":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"66cec285efe399ad6dbdfaed","author":"anji","title":"k8","year":2002},"level":"info","message":"Created new book:","timestamp":"2024-08-28T06:24:05.219Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:24:05.293Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:24:05.486Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:26:07.175Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:26:07.370Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:26:07.713Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:26:07.906Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:26:10.161Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:26:10.355Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:26:10.624Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:26:10.817Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:26:13.353Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:26:13.546Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:26:13.852Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:26:14.045Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:26:14.290Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:26:14.483Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:26:14.560Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:26:14.753Z"}
+{"$__":{"$versionError":null,"activePaths":{"paths":{"author":"require","title":"require"},"states":{"default":{},"modify":{},"require":{"author":true,"title":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"author":true,"title":true,"year":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"66cec30befe399ad6dbdfaf8","author":"anji","title":"k8","year":2002},"level":"info","message":"Created new book:","timestamp":"2024-08-28T06:26:19.735Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:26:19.976Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:26:20.169Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-28T06:30:33.710Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-28T06:30:35.813Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:30:59.138Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:30:59.346Z"}
+{"_message":"Book validation failed","errors":{"author":{"kind":"required","message":"Path `author` is required.","name":"ValidatorError","path":"author","properties":{"message":"Path `author` is required.","path":"author","type":"required"}},"title":{"kind":"required","message":"Path `title` is required.","name":"ValidatorError","path":"title","properties":{"message":"Path `title` is required.","path":"title","type":"required"}}},"level":"error","message":"Error creating new book: Book validation failed: title: Path `title` is required., author: Path `author` is required.","stack":"ValidationError: Book validation failed: title: Path `title` is required., author: Path `author` is required.\n    at Document.invalidate (/workspaces/redis-app/node_modules/mongoose/lib/document.js:3312:32)\n    at /workspaces/redis-app/node_modules/mongoose/lib/document.js:3073:17\n    at /workspaces/redis-app/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-08-28T06:31:00.215Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:00.288Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:00.487Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:05.005Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:05.204Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:05.482Z"}
+{"_message":"Book validation failed","errors":{"author":{"kind":"required","message":"Path `author` is required.","name":"ValidatorError","path":"author","properties":{"message":"Path `author` is required.","path":"author","type":"required"}},"title":{"kind":"required","message":"Path `title` is required.","name":"ValidatorError","path":"title","properties":{"message":"Path `title` is required.","path":"title","type":"required"}}},"level":"error","message":"Error creating new book: Book validation failed: title: Path `title` is required., author: Path `author` is required.","stack":"ValidationError: Book validation failed: title: Path `title` is required., author: Path `author` is required.\n    at Document.invalidate (/workspaces/redis-app/node_modules/mongoose/lib/document.js:3312:32)\n    at /workspaces/redis-app/node_modules/mongoose/lib/document.js:3073:17\n    at /workspaces/redis-app/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-08-28T06:31:05.555Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:05.680Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:05.763Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:05.961Z"}
+{"_message":"Book validation failed","errors":{"author":{"kind":"required","message":"Path `author` is required.","name":"ValidatorError","path":"author","properties":{"message":"Path `author` is required.","path":"author","type":"required"}},"title":{"kind":"required","message":"Path `title` is required.","name":"ValidatorError","path":"title","properties":{"message":"Path `title` is required.","path":"title","type":"required"}}},"level":"error","message":"Error creating new book: Book validation failed: title: Path `title` is required., author: Path `author` is required.","stack":"ValidationError: Book validation failed: title: Path `title` is required., author: Path `author` is required.\n    at Document.invalidate (/workspaces/redis-app/node_modules/mongoose/lib/document.js:3312:32)\n    at /workspaces/redis-app/node_modules/mongoose/lib/document.js:3073:17\n    at /workspaces/redis-app/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-08-28T06:31:05.964Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:06.048Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:06.247Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:06.320Z"}
+{"_message":"Book validation failed","errors":{"author":{"kind":"required","message":"Path `author` is required.","name":"ValidatorError","path":"author","properties":{"message":"Path `author` is required.","path":"author","type":"required"}},"title":{"kind":"required","message":"Path `title` is required.","name":"ValidatorError","path":"title","properties":{"message":"Path `title` is required.","path":"title","type":"required"}}},"level":"error","message":"Error creating new book: Book validation failed: title: Path `title` is required., author: Path `author` is required.","stack":"ValidationError: Book validation failed: title: Path `title` is required., author: Path `author` is required.\n    at Document.invalidate (/workspaces/redis-app/node_modules/mongoose/lib/document.js:3312:32)\n    at /workspaces/redis-app/node_modules/mongoose/lib/document.js:3073:17\n    at /workspaces/redis-app/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-08-28T06:31:06.515Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:06.518Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:06.595Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:06.793Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:24.620Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:24.818Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:24.911Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:25.021Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:25.109Z"}
+{"_message":"Book validation failed","errors":{"author":{"kind":"required","message":"Path `author` is required.","name":"ValidatorError","path":"author","properties":{"message":"Path `author` is required.","path":"author","type":"required"}},"title":{"kind":"required","message":"Path `title` is required.","name":"ValidatorError","path":"title","properties":{"message":"Path `title` is required.","path":"title","type":"required"}}},"level":"error","message":"Error creating new book: Book validation failed: title: Path `title` is required., author: Path `author` is required.","stack":"ValidationError: Book validation failed: title: Path `title` is required., author: Path `author` is required.\n    at Document.invalidate (/workspaces/redis-app/node_modules/mongoose/lib/document.js:3312:32)\n    at /workspaces/redis-app/node_modules/mongoose/lib/document.js:3073:17\n    at /workspaces/redis-app/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-08-28T06:31:25.138Z"}
+{"_message":"Book validation failed","errors":{"author":{"kind":"required","message":"Path `author` is required.","name":"ValidatorError","path":"author","properties":{"message":"Path `author` is required.","path":"author","type":"required"}},"title":{"kind":"required","message":"Path `title` is required.","name":"ValidatorError","path":"title","properties":{"message":"Path `title` is required.","path":"title","type":"required"}}},"level":"error","message":"Error creating new book: Book validation failed: title: Path `title` is required., author: Path `author` is required.","stack":"ValidationError: Book validation failed: title: Path `title` is required., author: Path `author` is required.\n    at Document.invalidate (/workspaces/redis-app/node_modules/mongoose/lib/document.js:3312:32)\n    at /workspaces/redis-app/node_modules/mongoose/lib/document.js:3073:17\n    at /workspaces/redis-app/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-08-28T06:31:25.354Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:26.236Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:26.333Z"}
+{"_message":"Book validation failed","errors":{"author":{"kind":"required","message":"Path `author` is required.","name":"ValidatorError","path":"author","properties":{"message":"Path `author` is required.","path":"author","type":"required"}},"title":{"kind":"required","message":"Path `title` is required.","name":"ValidatorError","path":"title","properties":{"message":"Path `title` is required.","path":"title","type":"required"}}},"level":"error","message":"Error creating new book: Book validation failed: title: Path `title` is required., author: Path `author` is required.","stack":"ValidationError: Book validation failed: title: Path `title` is required., author: Path `author` is required.\n    at Document.invalidate (/workspaces/redis-app/node_modules/mongoose/lib/document.js:3312:32)\n    at /workspaces/redis-app/node_modules/mongoose/lib/document.js:3073:17\n    at /workspaces/redis-app/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-08-28T06:31:26.507Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:26.531Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:26.592Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:26.790Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:26.853Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:27.051Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:31.460Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:31.657Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:34.054Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:34.252Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:34.340Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:34.538Z"}
+{"_message":"Book validation failed","errors":{"author":{"kind":"required","message":"Path `author` is required.","name":"ValidatorError","path":"author","properties":{"message":"Path `author` is required.","path":"author","type":"required"}},"title":{"kind":"required","message":"Path `title` is required.","name":"ValidatorError","path":"title","properties":{"message":"Path `title` is required.","path":"title","type":"required"}}},"level":"error","message":"Error creating new book: Book validation failed: title: Path `title` is required., author: Path `author` is required.","stack":"ValidationError: Book validation failed: title: Path `title` is required., author: Path `author` is required.\n    at Document.invalidate (/workspaces/redis-app/node_modules/mongoose/lib/document.js:3312:32)\n    at /workspaces/redis-app/node_modules/mongoose/lib/document.js:3073:17\n    at /workspaces/redis-app/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-08-28T06:31:34.608Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:34.619Z"}
+{"_message":"Book validation failed","errors":{"author":{"kind":"required","message":"Path `author` is required.","name":"ValidatorError","path":"author","properties":{"message":"Path `author` is required.","path":"author","type":"required"}},"title":{"kind":"required","message":"Path `title` is required.","name":"ValidatorError","path":"title","properties":{"message":"Path `title` is required.","path":"title","type":"required"}}},"level":"error","message":"Error creating new book: Book validation failed: title: Path `title` is required., author: Path `author` is required.","stack":"ValidationError: Book validation failed: title: Path `title` is required., author: Path `author` is required.\n    at Document.invalidate (/workspaces/redis-app/node_modules/mongoose/lib/document.js:3312:32)\n    at /workspaces/redis-app/node_modules/mongoose/lib/document.js:3073:17\n    at /workspaces/redis-app/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-08-28T06:31:34.818Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:34.820Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:34.911Z"}
+{"_message":"Book validation failed","errors":{"author":{"kind":"required","message":"Path `author` is required.","name":"ValidatorError","path":"author","properties":{"message":"Path `author` is required.","path":"author","type":"required"}},"title":{"kind":"required","message":"Path `title` is required.","name":"ValidatorError","path":"title","properties":{"message":"Path `title` is required.","path":"title","type":"required"}}},"level":"error","message":"Error creating new book: Book validation failed: title: Path `title` is required., author: Path `author` is required.","stack":"ValidationError: Book validation failed: title: Path `title` is required., author: Path `author` is required.\n    at Document.invalidate (/workspaces/redis-app/node_modules/mongoose/lib/document.js:3312:32)\n    at /workspaces/redis-app/node_modules/mongoose/lib/document.js:3073:17\n    at /workspaces/redis-app/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-08-28T06:31:35.109Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:35.112Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:35.190Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:35.387Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:35.460Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:35.657Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:35.725Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:35.922Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:36.009Z"}
+{"_message":"Book validation failed","errors":{"author":{"kind":"required","message":"Path `author` is required.","name":"ValidatorError","path":"author","properties":{"message":"Path `author` is required.","path":"author","type":"required"}},"title":{"kind":"required","message":"Path `title` is required.","name":"ValidatorError","path":"title","properties":{"message":"Path `title` is required.","path":"title","type":"required"}}},"level":"error","message":"Error creating new book: Book validation failed: title: Path `title` is required., author: Path `author` is required.","stack":"ValidationError: Book validation failed: title: Path `title` is required., author: Path `author` is required.\n    at Document.invalidate (/workspaces/redis-app/node_modules/mongoose/lib/document.js:3312:32)\n    at /workspaces/redis-app/node_modules/mongoose/lib/document.js:3073:17\n    at /workspaces/redis-app/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-08-28T06:31:36.191Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:36.207Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:36.274Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:36.472Z"}
+{"_message":"Book validation failed","errors":{"author":{"kind":"required","message":"Path `author` is required.","name":"ValidatorError","path":"author","properties":{"message":"Path `author` is required.","path":"author","type":"required"}},"title":{"kind":"required","message":"Path `title` is required.","name":"ValidatorError","path":"title","properties":{"message":"Path `title` is required.","path":"title","type":"required"}}},"level":"error","message":"Error creating new book: Book validation failed: title: Path `title` is required., author: Path `author` is required.","stack":"ValidationError: Book validation failed: title: Path `title` is required., author: Path `author` is required.\n    at Document.invalidate (/workspaces/redis-app/node_modules/mongoose/lib/document.js:3312:32)\n    at /workspaces/redis-app/node_modules/mongoose/lib/document.js:3073:17\n    at /workspaces/redis-app/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-08-28T06:31:36.485Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:36.560Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:36.758Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:40.109Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:40.307Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:40.383Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:40.581Z"}
+{"_message":"Book validation failed","errors":{"author":{"kind":"required","message":"Path `author` is required.","name":"ValidatorError","path":"author","properties":{"message":"Path `author` is required.","path":"author","type":"required"}},"title":{"kind":"required","message":"Path `title` is required.","name":"ValidatorError","path":"title","properties":{"message":"Path `title` is required.","path":"title","type":"required"}}},"level":"error","message":"Error creating new book: Book validation failed: title: Path `title` is required., author: Path `author` is required.","stack":"ValidationError: Book validation failed: title: Path `title` is required., author: Path `author` is required.\n    at Document.invalidate (/workspaces/redis-app/node_modules/mongoose/lib/document.js:3312:32)\n    at /workspaces/redis-app/node_modules/mongoose/lib/document.js:3073:17\n    at /workspaces/redis-app/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-08-28T06:31:40.591Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:40.674Z"}
+{"_message":"Book validation failed","errors":{"author":{"kind":"required","message":"Path `author` is required.","name":"ValidatorError","path":"author","properties":{"message":"Path `author` is required.","path":"author","type":"required"}},"title":{"kind":"required","message":"Path `title` is required.","name":"ValidatorError","path":"title","properties":{"message":"Path `title` is required.","path":"title","type":"required"}}},"level":"error","message":"Error creating new book: Book validation failed: title: Path `title` is required., author: Path `author` is required.","stack":"ValidationError: Book validation failed: title: Path `title` is required., author: Path `author` is required.\n    at Document.invalidate (/workspaces/redis-app/node_modules/mongoose/lib/document.js:3312:32)\n    at /workspaces/redis-app/node_modules/mongoose/lib/document.js:3073:17\n    at /workspaces/redis-app/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-08-28T06:31:40.861Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:40.872Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:40.954Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:41.151Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:56.996Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:57.194Z"}
+{"_message":"Book validation failed","errors":{"author":{"kind":"required","message":"Path `author` is required.","name":"ValidatorError","path":"author","properties":{"message":"Path `author` is required.","path":"author","type":"required"}},"title":{"kind":"required","message":"Path `title` is required.","name":"ValidatorError","path":"title","properties":{"message":"Path `title` is required.","path":"title","type":"required"}}},"level":"error","message":"Error creating new book: Book validation failed: title: Path `title` is required., author: Path `author` is required.","stack":"ValidationError: Book validation failed: title: Path `title` is required., author: Path `author` is required.\n    at Document.invalidate (/workspaces/redis-app/node_modules/mongoose/lib/document.js:3312:32)\n    at /workspaces/redis-app/node_modules/mongoose/lib/document.js:3073:17\n    at /workspaces/redis-app/node_modules/mongoose/lib/schemaType.js:1388:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2024-08-28T06:31:57.547Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:31:57.629Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:31:57.826Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-28T06:40:34.993Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-28T06:40:37.033Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-28T06:41:24.119Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-28T06:41:25.952Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:41:37.076Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:41:37.277Z"}
+{"$__":{"$versionError":null,"activePaths":{"paths":{"author":"require","title":"require","year":"require"},"states":{"default":{},"modify":{},"require":{"author":true,"title":true,"year":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"author":true,"bookUrl":true,"description":true,"imageUrl":true,"title":true,"year":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"66cec756ec1c3e27b23f5b64","author":"Andrew Martin & Michael Hausenblas","bookUrl":"https://books.google.co.in/books?id=uQ9IEAAAQBAJ&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false","description":"Want to run your Kubernetes workloads safely and securely? This practical book provides a threat-based guide to Kubernetes security. Each chapter examines a particular component's architecture and potential default settings and then reviews existing high-profile attacks and historical Common Vulnerabilities and Exposures (CVEs). Authors Andrew Martin and Michael Hausenblas share best-practice configuration to help you harden clusters from possible angles of attack.","imageUrl":"https://learning.oreilly.com/covers/urn:orm:book:9781492081722/400w/","title":"Hacking Kubernetes","year":2010},"level":"info","message":"Created new book:","timestamp":"2024-08-28T06:44:38.954Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T06:44:41.186Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T06:44:41.380Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-28T06:47:49.892Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-28T06:47:51.808Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-28T06:48:35.925Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-28T06:48:37.741Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-28T07:14:38.621Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-28T07:14:40.503Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T07:14:46.879Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T07:14:47.074Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T07:14:59.249Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T07:14:59.438Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T07:15:44.420Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T07:15:44.608Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T07:16:02.976Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T07:16:03.164Z"}

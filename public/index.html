@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        input[type="text"], input[type="number"], textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: calc(100% - 16px);
+            margin: 8px 0;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 20px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <input type="text" id="searchInput" placeholder="Search books..." oninput="searchBooks()">
+    </header>
+
+    <button onclick="fetchBooks()">Fetch Books</button>
+
+    <form id="addBookForm">
+        <label>Title</label>
+        <input type="text" id="title" required>
+        
+        <label>Author</label>
+        <input type="text" id="author" required>
+        
+        <label>Year</label>
+        <input type="number" id="year" required>
+        
+        <label>Image URL</label>
+        <input type="text" id="imageUrl">
+        
+        <label>Description</label>
+        <textarea id="description"></textarea>
+        
+        <label>Book URL</label>
+        <input type="text" id="bookUrl">
+        
+        <button type="submit">Add Book</button>
+    </form>
+
+    <table id="booksTable" style="display: none;">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>Book URL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Books will be populated here -->
+        </tbody>
+    </table>
+
+    <script>
+        async function fetchBooks() {
+            const response = await fetch('/api/books');
+            const data = await response.json();
+            const table = document.getElementById('booksTable');
+            const tbody = table.querySelector('tbody');
+
+            tbody.innerHTML = ''; // Clear previous data
+            data.data.forEach(book => {
+                const row = document.createElement('tr');
+
+                row.innerHTML = `
+                    <td>${book.title}</td>
+                    <td>${book.author}</td>
+                    <td>${book.year}</td>
+                    <td>${book.description || 'No description'}</td>
+                    <td><img src="${book.imageUrl || 'default-placeholder.png'}" alt="Book Image"></td>
+                    <td><a href="${book.bookUrl || '#'}" target="_blank">Link</a></td>
+                `;
+                
+                tbody.appendChild(row);
+            });
+
+            table.style.display = 'table'; // Show the table
+        }
+
+        document.getElementById('addBookForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const title = document.getElementById('title').value;
+            const author = document.getElementById('author').value;
+            const year = document.getElementById('year').value;
+            const imageUrl = document.getElementById('imageUrl').value;
+            const description = document.getElementById('description').value;
+            const bookUrl = document.getElementById('bookUrl').value;
+
+            const response = await fetch('/api/books', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ title, author, year, imageUrl, description, bookUrl }),
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                alert('Book added successfully');
+                document.getElementById('addBookForm').reset();
+                fetchBooks(); // Refresh the book list
+            } else {
+                alert(`Error: ${result.message}`);
+            }
+        });
+
+        function searchBooks() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const rows = document.querySelectorAll('#booksTable tbody tr');
+            
+            rows.forEach(row => {
+                const title = row.cells[0].textContent.toLowerCase();
+                const author = row.cells[1].textContent.toLowerCase();
+                const year = row.cells[2].textContent.toLowerCase();
+                const description = row.cells[3].textContent.toLowerCase();
+
+                if (title.includes(searchInput) || author.includes(searchInput) || year.includes(searchInput) || description.includes(searchInput)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

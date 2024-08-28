@@ -6,6 +6,7 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerJsDoc = require('swagger-jsdoc');
 const bookRoutes = require('./routes/books');
 const winston = require('winston');
+const path = require('path');
 
 // Set up logging
 const logger = winston.createLogger({
@@ -27,14 +28,21 @@ const logger = winston.createLogger({
 
 const app = express();
 
-// CORS configuration
-app.use(cors({
-    origin: '*', // Allow all origins for testing; adjust as needed
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-}));
+// CORS configuration using express middleware for greater control
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*'); // Allow all origins or specify allowed origins
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    if (req.method === 'OPTIONS') {
+        return res.sendStatus(200); // Preflight request handling
+    }
+    next();
+});
 
 app.use(express.json());
+
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Swagger setup
 const swaggerOptions = {
@@ -47,7 +55,7 @@ const swaggerOptions = {
         },
         servers: [
             {
-                url: 'http://localhost:5000/api', // Adjust this if necessary
+                url: 'http://localhost:3000/', // Adjust this if necessary
             },
         ],
     },
@@ -59,6 +67,11 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 // Routes
 app.use('/api/books', bookRoutes);
+
+// Handle base URL
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 // Database connection
 const mongoUri = process.env.MONGODB_URI;
