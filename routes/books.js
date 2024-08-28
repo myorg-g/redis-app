@@ -25,16 +25,7 @@ const logger = winston.createLogger({
 });
 
 // Configure multer for file uploads
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        const dir = file.mimetype.startsWith('image/') ? 'uploads/images' : 'uploads/files';
-        cb(null, dir);
-    },
-    filename: (req, file, cb) => {
-        cb(null, Date.now() + path.extname(file.originalname)); // Append the file extension
-    }
-});
-
+const storage = multer.memoryStorage(); // Use memoryStorage for Buffer data
 const upload = multer({ storage });
 
 // Middleware to check cache
@@ -96,17 +87,16 @@ router.get('/:id', checkCache, async (req, res) => {
 // Create a new book with image and PDF upload
 router.post('/', upload.fields([{ name: 'image' }, { name: 'pdf' }]), async (req, res) => {
     const { title, author, year, description, bookUrl } = req.body;
-    const imageUrl = req.files['image'] ? `/uploads/images/${req.files['image'][0].filename}` : null;
-    const pdfUrl = req.files['pdf'] ? `/uploads/files/${req.files['pdf'][0].filename}` : null;
+    const imageUrl = req.files['image'] ? req.files['image'][0].buffer : null;
+    const pdfUrl = req.files['pdf'] ? req.files['pdf'][0].buffer : null;
 
     const book = new Book({
         title,
         author,
         year,
         description,
-        bookUrl,
-        imageUrl,
-        pdfUrl
+        bookUrl: pdfUrl,
+        imageUrl: imageUrl
     });
 
     try {
@@ -123,13 +113,13 @@ router.post('/', upload.fields([{ name: 'image' }, { name: 'pdf' }]), async (req
 // Update a book by ID route
 router.put('/:id', upload.fields([{ name: 'image' }, { name: 'pdf' }]), async (req, res) => {
     const { title, author, year, description, bookUrl } = req.body;
-    const imageUrl = req.files['image'] ? `/uploads/images/${req.files['image'][0].filename}` : null;
-    const pdfUrl = req.files['pdf'] ? `/uploads/files/${req.files['pdf'][0].filename}` : null;
+    const imageUrl = req.files['image'] ? req.files['image'][0].buffer : null;
+    const pdfUrl = req.files['pdf'] ? req.files['pdf'][0].buffer : null;
 
     try {
         const book = await Book.findByIdAndUpdate(
             req.params.id,
-            { title, author, year, description, bookUrl, imageUrl, pdfUrl },
+            { title, author, year, description, bookUrl: pdfUrl, imageUrl: imageUrl },
             { new: true }
         );
         if (book) {
