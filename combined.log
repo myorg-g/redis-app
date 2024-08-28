@@ -348,3 +348,7 @@
 {"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:32:37.862Z"}
 {"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:32:37.948Z"}
 {"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:32:38.026Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-28T09:16:32.541Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-28T09:16:34.494Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T09:16:40.954Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T09:16:41.156Z"}
