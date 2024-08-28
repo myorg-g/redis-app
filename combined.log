@@ -227,3 +227,124 @@
 {"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T07:15:44.608Z"}
 {"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T07:16:02.976Z"}
 {"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T07:16:03.164Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-08-28T08:06:04.470Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-28T08:06:06.494Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:26.897Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:27.097Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:33.791Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:33.985Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:34.798Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:34.992Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:35.062Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:35.255Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:35.410Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:35.431Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:35.603Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:35.910Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:35.981Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:36.071Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:36.103Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:36.151Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:36.253Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:36.295Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:36.317Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:36.401Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:36.487Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:36.637Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:36.678Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:36.829Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:37.171Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:37.662Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:39.056Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:39.254Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:39.551Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:39.631Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:39.721Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:39.749Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:39.802Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:39.823Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:39.896Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:39.914Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:39.966Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:40.000Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:40.089Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:40.159Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:40.752Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:40.853Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:40.945Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:41.046Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:41.152Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:41.296Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:41.345Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:41.489Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:41.566Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:41.760Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:46.112Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:46.292Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:46.306Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:46.485Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:46.648Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:46.841Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:48.265Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:48.458Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:48.488Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:48.680Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:48.705Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:48.898Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:53.995Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:54.188Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:54.307Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:54.501Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:54.582Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:54.775Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:08:54.776Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:08:54.970Z"}
+{"$__":{"$versionError":null,"activePaths":{"paths":{"author":"require","title":"require","year":"require"},"states":{"default":{},"modify":{},"require":{"author":true,"title":true,"year":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"author":true,"bookUrl":true,"description":true,"imageUrl":true,"title":true,"year":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"66cedbff27305708929f932b","author":"Ghada Atef","bookUrl":"https://www.amazon.in/Mastering-Ansible-Comprehensive-Automating-Configuration-ebook/dp/B0BXYVKCRD","description":"A Comprehensive Guide to Automating Configuration Management and Deployment\" is an in-depth guide to Ansible, a popular open-source tool for automating infrastructure as code.\n","imageUrl":"https://m.media-amazon.com/images/I/71+lzjAzjYL._SY522_.jpg","title":"Mastering Ansible","year":2000},"level":"info","message":"Created new book:","timestamp":"2024-08-28T08:12:47.399Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:12:49.536Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:12:49.728Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:14:01.801Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:14:01.994Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:20:44.587Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:20:44.780Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:20:47.464Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:20:47.656Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:20:48.299Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:20:48.492Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:20:48.550Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:20:48.743Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:20:48.811Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:20:49.004Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:24:44.963Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:24:45.156Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:24:46.454Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:24:46.646Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:24:47.009Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:24:47.201Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:24:47.438Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:24:47.630Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:28:18.416Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:28:18.609Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:32:16.157Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:32:16.351Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:32:30.142Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:32:30.335Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:32:31.724Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:32:31.888Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:32:31.917Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:32:32.081Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:32:35.750Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:32:35.942Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:32:35.957Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:32:36.150Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:32:36.308Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:32:36.314Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:32:36.501Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:32:36.506Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:32:37.169Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:32:37.361Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:32:37.669Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:32:37.755Z"}
+{"level":"info","message":"Cache miss for all books, retrieving from database","timestamp":"2024-08-28T08:32:37.833Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:32:37.862Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:32:37.948Z"}
+{"level":"info","message":"Set cache for all books","timestamp":"2024-08-28T08:32:38.026Z"}

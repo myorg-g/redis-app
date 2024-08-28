@@ -11,10 +11,12 @@
   "description": "",
   "dependencies": {
     "@statsig/js-client": "^2.0.0",
+    "aws-sdk": "^2.1684.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mongoose": "^8.5.4",
+    "multer": "^1.4.5-lts.1",
     "redis": "^4.7.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",

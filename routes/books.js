@@ -3,6 +3,8 @@ const router = express.Router();
 const Book = require('../models/book');
 const redisClient = require('../config/redis');
 const winston = require('winston');
+const multer = require('multer');
+const path = require('path');
 
 // Set up logging
 const logger = winston.createLogger({
@@ -21,6 +23,19 @@ const logger = winston.createLogger({
         new winston.transports.File({ filename: 'combined.log' })
     ],
 });
+
+// Configure multer for file uploads
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        const dir = file.mimetype.startsWith('image/') ? 'uploads/images' : 'uploads/files';
+        cb(null, dir);
+    },
+    filename: (req, file, cb) => {
+        cb(null, Date.now() + path.extname(file.originalname)); // Append the file extension
+    }
+});
+
+const upload = multer({ storage });
 
 // Middleware to check cache
 const checkCache = async (req, res, next) => {
@@ -41,51 +56,7 @@ const checkCache = async (req, res, next) => {
     next();
 };
 
-/**
- * @swagger
- * components:
- *   schemas:
- *     Book:
- *       type: object
- *       properties:
- *         title:
- *           type: string
- *           example: "The Great Gatsby"
- *         author:
- *           type: string
- *           example: "F. Scott Fitzgerald"
- *         year:
- *           type: integer
- *           example: 1925
- *         imageUrl:
- *           type: string
- *           example: "http://example.com/image.jpg"
- *         description:
- *           type: string
- *           example: "A classic novel of the Jazz Age."
- *         bookUrl:
- *           type: string
- *           example: "http://example.com/book"
- *       required:
- *         - title
- *         - author
- */
-
-/**
- * @swagger
- * /api/books:
- *   get:
- *     summary: Get all books
- *     responses:
- *       200:
- *         description: List of all books
- *         content:
- *           application/json:
- *             schema:
- *               type: array
- *               items:
- *                 $ref: '#/components/schemas/Book'
- */
+// Get all books route
 router.get('/', async (req, res) => {
     try {
         const cachedBooks = await redisClient.get('allBooks');
@@ -104,28 +75,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-/**
- * @swagger
- * /api/books/{id}:
- *   get:
- *     summary: Get a book by ID
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         description: The ID of the book
- *         schema:
- *           type: string
- *     responses:
- *       200:
- *         description: A single book
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/Book'
- *       404:
- *         description: Book not found
- */
+// Get a book by ID route
 router.get('/:id', checkCache, async (req, res) => {
     try {
         const book = await Book.findById(req.params.id);
@@ -143,34 +93,20 @@ router.get('/:id', checkCache, async (req, res) => {
     }
 });
 
-/**
- * @swagger
- * /api/books:
- *   post:
- *     summary: Create a new book
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             $ref: '#/components/schemas/Book'
- *     responses:
- *       201:
- *         description: The created book
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/Book'
- */
-router.post('/', async (req, res) => {
-    const { title, author, year, imageUrl, description, bookUrl } = req.body;
+// Create a new book with image and PDF upload
+router.post('/', upload.fields([{ name: 'image' }, { name: 'pdf' }]), async (req, res) => {
+    const { title, author, year, description, bookUrl } = req.body;
+    const imageUrl = req.files['image'] ? `/uploads/images/${req.files['image'][0].filename}` : null;
+    const pdfUrl = req.files['pdf'] ? `/uploads/files/${req.files['pdf'][0].filename}` : null;
+
     const book = new Book({
         title,
         author,
         year,
-        imageUrl,
         description,
-        bookUrl
+        bookUrl,
+        imageUrl,
+        pdfUrl
     });
 
     try {
@@ -184,37 +120,18 @@ router.post('/', async (req, res) => {
     }
 });
 
-/**
- * @swagger
- * /api/books/{id}:
- *   put:
- *     summary: Update a book by ID
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         description: The ID of the book
- *         schema:
- *           type: string
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             $ref: '#/components/schemas/Book'
- *     responses:
- *       200:
- *         description: The updated book
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/Book'
- *       404:
- *         description: Book not found
- */
-router.put('/:id', async (req, res) => {
+// Update a book by ID route
+router.put('/:id', upload.fields([{ name: 'image' }, { name: 'pdf' }]), async (req, res) => {
+    const { title, author, year, description, bookUrl } = req.body;
+    const imageUrl = req.files['image'] ? `/uploads/images/${req.files['image'][0].filename}` : null;
+    const pdfUrl = req.files['pdf'] ? `/uploads/files/${req.files['pdf'][0].filename}` : null;
+
     try {
-        const book = await Book.findByIdAndUpdate(req.params.id, req.body, { new: true });
+        const book = await Book.findByIdAndUpdate(
+            req.params.id,
+            { title, author, year, description, bookUrl, imageUrl, pdfUrl },
+            { new: true }
+        );
         if (book) {
             await redisClient.del('allBooks'); // Invalidate cache for all books
             await redisClient.set(`book:${req.params.id}`, JSON.stringify(book), 'EX', 3600); // Update cache
@@ -230,24 +147,7 @@ router.put('/:id', async (req, res) => {
     }
 });
 
-/**
- * @swagger
- * /api/books/{id}:
- *   delete:
- *     summary: Delete a book by ID
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         description: The ID of the book
- *         schema:
- *           type: string
- *     responses:
- *       200:
- *         description: The deleted book
- *       404:
- *         description: Book not found
- */
+// Delete a book by ID route
 router.delete('/:id', async (req, res) => {
     try {
         const book = await Book.findByIdAndDelete(req.params.id);
