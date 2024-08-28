@@ -1,0 +1,385 @@
+# ConfigMap for MongoDB configuration
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-db
+data:
+  MONGO_INITDB_ROOT_USERNAME: "admin"  # Changed: Added explicit root username key
+  MONGO_INITDB_ROOT_PASSWORD: "admin"  # Changed: Added explicit root password key
+---
+# Deployment for MongoDB
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongo-db
+  template:
+    metadata:
+      labels:
+        app: mongo-db
+    spec:
+      containers:
+      - name: mongo-db
+        image: mongo
+        ports:
+        - containerPort: 27017
+        env:  # Changed: Replaced envFrom with explicit environment variable mappings
+        - name: MONGO_INITDB_ROOT_USERNAME
+          valueFrom:
+            configMapKeyRef:
+              name: mongo-db
+              key: MONGO_INITDB_ROOT_USERNAME
+        - name: MONGO_INITDB_ROOT_PASSWORD
+          valueFrom:
+            configMapKeyRef:
+              name: mongo-db
+              key: MONGO_INITDB_ROOT_PASSWORD
+
+---
+# Service for MongoDB
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo-db
+spec:
+  selector:
+    app: mongo-db
+  ports:
+  - port: 27017
+    targetPort: 27017
+  type: ClusterIP
+
+---
+# ConfigMap for Mongo Express configuration
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo
+data:
+  ME_CONFIG_MONGODB_SERVER: "mongo-db"
+  ME_CONFIG_MONGODB_ADMINUSERNAME: "admin"
+  ME_CONFIG_MONGODB_ADMINPASSWORD: "admin"
+  ME_CONFIG_BASICAUTH_USERNAME: "admin"
+  ME_CONFIG_BASICAUTH_PASSWORD: "admin"
+  ME_CONFIG_MONGODB_PORT: "27017"
+
+---
+# Deployment for Mongo Express
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo-express
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongo-express
+  template:
+    metadata:
+      labels:
+        app: mongo-express
+    spec:
+      containers:
+      - name: mongo-express
+        image: mongo-express:latest
+        ports:
+        - containerPort: 8081
+        env:  # Changed: Replaced envFrom with explicit environment variable mappings
+        - name: ME_CONFIG_MONGODB_SERVER
+          valueFrom:
+            configMapKeyRef:
+              name: mongo
+              key: ME_CONFIG_MONGODB_SERVER
+        - name: ME_CONFIG_MONGODB_ADMINUSERNAME
+          valueFrom:
+            configMapKeyRef:
+              name: mongo
+              key: ME_CONFIG_MONGODB_ADMINUSERNAME
+        - name: ME_CONFIG_MONGODB_ADMINPASSWORD
+          valueFrom:
+            configMapKeyRef:
+              name: mongo
+              key: ME_CONFIG_MONGODB_ADMINPASSWORD
+        - name: ME_CONFIG_BASICAUTH_USERNAME
+          valueFrom:
+            configMapKeyRef:
+              name: mongo
+              key: ME_CONFIG_BASICAUTH_USERNAME
+        - name: ME_CONFIG_BASICAUTH_PASSWORD
+          valueFrom:
+            configMapKeyRef:
+              name: mongo
+              key: ME_CONFIG_BASICAUTH_PASSWORD
+        - name: ME_CONFIG_MONGODB_PORT
+          valueFrom:
+            configMapKeyRef:
+              name: mongo
+              key: ME_CONFIG_MONGODB_PORT
+
+---
+# Service for Mongo Express
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo-express
+spec:
+  selector:
+    app: mongo-express
+  ports:
+  - port: 8081
+    targetPort: 8081
+  type: NodePort
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: redis
+
+data:
+  REDIS_MASTER_PORT_NUMBER: "6379"
+  REDIS_MASTER_PASSWORD: "admin"
+
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis
+spec: 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis
+  template:
+    metadata:
+      labels:
+        app: redis
+    spec:
+      containers:
+      - name: redis
+        image: bitnami/redis
+        ports:
+        - containerPort: 6379
+        env:
+        - name: ALLOW_EMPTY_PASSWORD
+          value: "yes"
+        - name: REDIS_MASTER_PORT_NUMBER
+          valueFrom:
+            configMapKeyRef:
+              name: redis
+              key: REDIS_MASTER_PORT_NUMBER
+        - name: REDIS_MASTER_PASSWORD
+          valueFrom:
+            configMapKeyRef: 
+              name: redis
+              key: REDIS_MASTER_PORT_NUMBER
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-host
+spec: 
+  selector:
+    app: redis
+  ports:
+  - port: 6379
+    targetPort: 6379
+# ConfigMap for MongoDB configuration
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-db
+data:
+  MONGO_INITDB_ROOT_USERNAME: "admin"  # Changed: Added explicit root username key
+  MONGO_INITDB_ROOT_PASSWORD: "admin"  # Changed: Added explicit root password key
+---
+# Deployment for MongoDB
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongo-db
+  template:
+    metadata:
+      labels:
+        app: mongo-db
+    spec:
+      containers:
+      - name: mongo-db
+        image: mongo
+        ports:
+        - containerPort: 27017
+        env:  # Changed: Replaced envFrom with explicit environment variable mappings
+        - name: MONGO_INITDB_ROOT_USERNAME
+          valueFrom:
+            configMapKeyRef:
+              name: mongo-db
+              key: MONGO_INITDB_ROOT_USERNAME
+        - name: MONGO_INITDB_ROOT_PASSWORD
+          valueFrom:
+            configMapKeyRef:
+              name: mongo-db
+              key: MONGO_INITDB_ROOT_PASSWORD
+
+---
+# Service for MongoDB
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo-db
+spec:
+  selector:
+    app: mongo-db
+  ports:
+  - port: 27017
+    targetPort: 27017
+  type: ClusterIP
+
+---
+# ConfigMap for Mongo Express configuration
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo
+data:
+  ME_CONFIG_MONGODB_SERVER: "mongo-db"
+  ME_CONFIG_MONGODB_ADMINUSERNAME: "admin"
+  ME_CONFIG_MONGODB_ADMINPASSWORD: "admin"
+  ME_CONFIG_BASICAUTH_USERNAME: "admin"
+  ME_CONFIG_BASICAUTH_PASSWORD: "admin"
+  ME_CONFIG_MONGODB_PORT: "27017"
+
+---
+# Deployment for Mongo Express
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo-express
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongo-express
+  template:
+    metadata:
+      labels:
+        app: mongo-express
+    spec:
+      containers:
+      - name: mongo-express
+        image: mongo-express:latest
+        ports:
+        - containerPort: 8081
+        env:  # Changed: Replaced envFrom with explicit environment variable mappings
+        - name: ME_CONFIG_MONGODB_SERVER
+          valueFrom:
+            configMapKeyRef:
+              name: mongo
+              key: ME_CONFIG_MONGODB_SERVER
+        - name: ME_CONFIG_MONGODB_ADMINUSERNAME
+          valueFrom:
+            configMapKeyRef:
+              name: mongo
+              key: ME_CONFIG_MONGODB_ADMINUSERNAME
+        - name: ME_CONFIG_MONGODB_ADMINPASSWORD
+          valueFrom:
+            configMapKeyRef:
+              name: mongo
+              key: ME_CONFIG_MONGODB_ADMINPASSWORD
+        - name: ME_CONFIG_BASICAUTH_USERNAME
+          valueFrom:
+            configMapKeyRef:
+              name: mongo
+              key: ME_CONFIG_BASICAUTH_USERNAME
+        - name: ME_CONFIG_BASICAUTH_PASSWORD
+          valueFrom:
+            configMapKeyRef:
+              name: mongo
+              key: ME_CONFIG_BASICAUTH_PASSWORD
+        - name: ME_CONFIG_MONGODB_PORT
+          valueFrom:
+            configMapKeyRef:
+              name: mongo
+              key: ME_CONFIG_MONGODB_PORT
+
+---
+# Service for Mongo Express
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo-express
+spec:
+  selector:
+    app: mongo-express
+  ports:
+  - port: 8081
+    targetPort: 8081
+  type: NodePort
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: redis
+
+data:
+  REDIS_MASTER_PORT_NUMBER: "6379"
+  REDIS_MASTER_PASSWORD: "admin"
+
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis
+spec: 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis
+  template:
+    metadata:
+      labels:
+        app: redis
+    spec:
+      containers:
+      - name: redis
+        image: bitnami/redis
+        ports:
+        - containerPort: 6379
+        env:
+        - name: ALLOW_EMPTY_PASSWORD
+          value: "yes"
+        - name: REDIS_MASTER_PORT_NUMBER
+          valueFrom:
+            configMapKeyRef:
+              name: redis
+              key: REDIS_MASTER_PORT_NUMBER
+        - name: REDIS_MASTER_PASSWORD
+          valueFrom:
+            configMapKeyRef: 
+              name: redis
+              key: REDIS_MASTER_PORT_NUMBER
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-host
+spec: 
+  selector:
+    app: redis
+  ports:
+  - port: 6379
+    targetPort: 6379
+---
